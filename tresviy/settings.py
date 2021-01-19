@@ -24,6 +24,13 @@ MY_APPS = [
     'main',
 ]
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(PROJECT_PATH, 'db.sqlite3'),
+    }
+}
+
 INSTALLED_APPS = DJANGO_APPS + MY_APPS
 
 MIDDLEWARE = [
